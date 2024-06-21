@@ -1,0 +1,4 @@
+Host weather_airflow
+    Hostname 3.144.233.219
+    User ubuntu
+    IdentityFile "C:\Users\Shaswat Sinha\Downloads\airflow-api.pem"
