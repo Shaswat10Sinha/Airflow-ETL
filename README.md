@@ -30,7 +30,7 @@ This project demonstrates an ETL (Extract, Transform, Load) pipeline using Apach
 - Data is made available for querying in AWS Athena
 
 ## Setup Instructions
-# 1. EC2 Instance Setup
+### 1. EC2 Instance Setup
 - Launch an EC2 t2.small instance.
 - Connect to Instance.
 - Inside the EC2 terminal run these commands to create a virtual env and install python dependencies plus airflow
@@ -44,13 +44,13 @@ This project demonstrates an ETL (Extract, Transform, Load) pipeline using Apach
   - sudo pip install apache-airflow
   - airflow standalone
 - Airflow userid and password will be displayed and launch it through publiv IPv4 insatnce URL on EC2 details page
-# 2. Create DAG's and transformation using python code weather_dag.py
+### 2. Create DAG's and transformation using python code weather_dag.py
 ![alt text](dags.png)
 
-# 3. AWS Glue Setup
+### 3. AWS Glue Setup
 - Create a Glue Crawler to crawl the S3 bucket and extract the schema.
 - Store the metadata in the Glue Data Catalog.
-# 4. AWS Athena Setup
+### 4. AWS Athena Setup
 - Use Athena to create tables based on the metadata stored in Glue.
 - Query the tables for ad hoc analysis.
   ![alt text](athena.png)
